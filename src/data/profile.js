@@ -156,7 +156,7 @@ export const coverFeature = {
 export const patentsAndChapters = [
   {
     group: "research",
-    kicker: "U.S. Patent Application, filed January 2026",
+    kicker: "U.S. Patent filed in January 2026",
     title: "Scalable 2D/3D covalent organic frameworks for enhanced and selective lithium recovery from brine: combined physisorption and electrosorption approach",
     meta: "Shetty D., Aldaqqa N. M., Bashri M., <strong>Dhanushkotti R.</strong> Khalifa University. Status: under examination.",
   },
