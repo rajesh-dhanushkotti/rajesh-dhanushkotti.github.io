@@ -92,13 +92,6 @@ export const experience = [
     project: "Demonstration and validation of an indigenously developed electrocatalyst for fuel cells.",
     supervisor: "Dr. Vishal Mahesh Dhavale",
   },
-  {
-    when: "2020 – 2022",
-    title: "Postdoctoral Fellow",
-    org: "SSN College of Engineering, Chennai, India",
-    project: "Layered double hydroxide composites toward high-performance supercapacitors.",
-    supervisor: "Dr. P. Balaji Bhargav",
-  },
 ];
 
 export const skills = {
