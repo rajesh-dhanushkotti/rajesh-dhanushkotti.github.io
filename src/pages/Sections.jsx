@@ -24,11 +24,15 @@ export function Experience() {
     <>
       <PageHead title="Experience" subtitle="Three research positions across India, the UAE and Canada." />
       <Timeline items={experience} />
-      <h2 className="sub">Skills &amp; instruments</h2>
-      <div className="two">
-        <div><h3>Techniques</h3><Chips items={skills.techniques} /></div>
-        <div><h3>Instruments</h3><Chips items={skills.instruments} /></div>
-      </div>
+      <h2 className="sub">Skills &amp; techniques</h2>
+      <dl className="skills">
+        {skills.map((g) => (
+          <div key={g.label} className="skill-row">
+            <dt>{g.label}</dt>
+            <dd><Chips items={g.items} /></dd>
+          </div>
+        ))}
+      </dl>
     </>
   );
 }
@@ -36,11 +40,11 @@ export function Experience() {
 export function Research() {
   return (
     <>
-      <PageHead title="Research interests" subtitle="Porous frameworks whose chemistry decides where ions go, and how fast." group="research" />
+      <PageHead title="Research interests" subtitle="" group="research" />
       <div className="themes">
         {researchThemes.map((t) => (
           <div key={t.title} className={`theme el ${t.group === "about" ? "" : t.group}`}>
-            <span className="period">{t.period}</span>
+            {t.period && <span className="period">{t.period}</span>}
             <h3>{t.title}</h3>
             <p>{t.text}</p>
           </div>
@@ -181,7 +185,7 @@ export function Media() {
 export function Contact() {
   return (
     <>
-      <PageHead title="Contact" subtitle="Open to collaborations on framework materials and lithium technologies." group="contact" />
+      <PageHead title="Contact" subtitle="" />
       <div className="contact-grid">
         <div className="card">
           <h3>University email</h3>
