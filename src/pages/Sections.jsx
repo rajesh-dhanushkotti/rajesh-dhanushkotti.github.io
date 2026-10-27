@@ -22,7 +22,7 @@ export function Education() {
 export function Experience() {
   return (
     <>
-      <PageHead title="Experience" subtitle="Four research positions across India, the UAE and Canada." />
+      <PageHead title="Experience" subtitle="Three research positions across India, the UAE and Canada." />
       <Timeline items={experience} />
       <h2 className="sub">Skills &amp; instruments</h2>
       <div className="two">
