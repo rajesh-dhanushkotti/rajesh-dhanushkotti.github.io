@@ -43,7 +43,7 @@ export const stats = [
   { value: String(metrics.hIndex), label: "h-index" },
   { value: "1", label: "Book Chapter" },
   { value: "1", label: "Patents" },
-  { value: "", label: "Countries worked: India, Abu Dhabi, Canada" },
+  { value: "3", label: "Countries worked: India, UAE, Canada" },
 ];
 
 // Newest first. Text may include simple HTML like <b> and <i>.
